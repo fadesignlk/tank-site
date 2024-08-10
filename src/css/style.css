@@ -197,7 +197,7 @@ button.navbar-toggler:focus{
     /* Hero Section */
     .hero {
         position: relative;
-        height: 550px;
+        height: calc(100vh - 108px);
         display: flex;
         align-items: center;
         justify-content: center;
