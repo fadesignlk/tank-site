@@ -211,16 +211,16 @@ footer{
     background: var(--primary);
     padding: 32px 0;
     color: var(--gray);
-
+    font-size: 0.9rem;
     h3{ 
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .links {
         padding-top: 24px;
 
         h5{
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-weight: 500;
             margin-bottom: 16px;
         }
@@ -237,7 +237,8 @@ footer{
 section.bottom-footer{
     background: var(--gray);
     color: var(--primary);
-    padding: 12px 0;
+    padding: 7px 0;
+    font-size: 0.9rem;
 }
 
 /* Responsive */
@@ -314,18 +315,21 @@ section.bottom-footer{
     .products-grp .card{
         border: none;
         border-radius: 0;
+        h4{
+            font-size: 1.15rem;
+            text-transform: uppercase;
+        }
     }
 
     .products-grp .card-body{
-        background: var(--secondary
-        );
+        background: var(--secondary);
         color: var(--gray);
     }
 
 
     /* Footer */
     footer img.logo{
-        width: 60px;
+        width: 45px;
     }
 
 }
