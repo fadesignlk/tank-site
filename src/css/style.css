@@ -16,6 +16,10 @@
     font-family: "Inter", sans-serif;
 }
 
+.text-justify{
+    text-align: justify;
+}
+
 /* Buttons     */
 .btn-primary{
     background: var(--primary);
@@ -149,6 +153,10 @@ button.navbar-toggler:focus{
     margin-bottom: 20px;
 }
 
+/* About GRP */
+.about-grp h2{
+    font-weight: 650;
+}
 
 
 /* Responsive */
@@ -168,6 +176,10 @@ button.navbar-toggler:focus{
 }
 
 @media (max-width: 576px) {
+
+    section.about-grp{
+        margin: 32px auto;
+    }
 
     /* Hero Section */
     .hero {
@@ -199,8 +211,11 @@ button.navbar-toggler:focus{
     }
 
     /* About GRP Section */
-
-    .about-grp .container{
+    /* .about-grp .container{
         padding: 0;
     }
+
+    .about-grp div.container-text{
+        padding: 0 32px;
+    } */
 }
