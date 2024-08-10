@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary: #2C2C2C;
+    --secondary: #EE7828;
+    --gray: #f5f6fa;
+    --white: white;
+    --secondary_prime: #806D61;
+    --secondary_2: #C5BAAA;
+    --black: #000;
+
+}
+
+/* General */
+*{
+    font-family: "Inter", sans-serif;
+}
+
+/* Buttons     */
+.btn-primary{
+    background: var(--primary);
+    color: var(--gray);
+    border: none;
+    border-radius: 0;
+    padding: 12px 26px;
+}
+
+.btn-primary-rv{
+    background: var(--secondary);
+    color: var(--gray);
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+    padding: 14px 34px;
+}
+
+.btn-primary:hover{
+    background: var(--secondary);
+}
+
+.btn-primary:active{
+    background: var(--secondary) !important;
+}
+
+.btn-primary-rv:hover{
+    background: var(--primary);
+}
+
+.btn-primary-rv:active{
+    background: var(--primary) !important;
+}
+
+section.top-bar{
+    background: var(--primary);
+    color: var(--gray);
+    font-weight: 200;
+}
+
+section.top-bar .container{
+    height: 45px;
+}
+
+/* Icons */
+i.bi.social{
+    font-size: 1.25rem;
+}
+
+i.bi.social:hover{
+    color: var(--secondary);
+}
+
+/* Navbar */
+nav.navbar{
+    height: 80px;
+    background: var(--gray);
+}
+
+nav .navbar-collapse{
+    background: var(--gray);
+    width: 100%;
+    left: 0;
+    padding: 16px;
+}
+
+nav a.nav-link{
+    font-weight: 600;
+}
+
+button.navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+button.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-brand span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/hero-1.jpg') no-repeat center center/cover; /* Background image */
+    overflow: hidden;
+}
+
+/* Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.692); /* Optional dark overlay */
+    z-index: 1;
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.hero h5{
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;    
+        z-index: 100000;
+    }
+}
+
+@media (max-width: 768px) {
+    .mb-n{
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Overlay */
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.692); /* Optional dark overlay */
+        z-index: 1;
+    }
+  
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* About GRP Section */
+
+    .about-grp .container{
+        padding: 0;
+    }
+}
