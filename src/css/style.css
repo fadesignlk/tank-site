@@ -177,6 +177,19 @@ button.navbar-toggler:focus{
 
 @media (max-width: 576px) {
 
+    nav.navbar{
+        height: 63px;
+    }
+
+    .navbar-brand img{
+        width: 32px;
+    }
+
+    .navbar-brand span{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
     section.about-grp{
         margin: 32px auto;
     }
