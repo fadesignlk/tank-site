@@ -12,16 +12,20 @@
 }
 
 /* General */
-*{
+* {
     font-family: "Inter", sans-serif;
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
+img {
+    object-fit: cover;
+}
+
 /* Buttons     */
-.btn-primary{
+.btn-primary {
     background: var(--primary);
     color: var(--gray);
     border: none;
@@ -29,7 +33,7 @@
     padding: 12px 26px;
 }
 
-.btn-primary-rv{
+.btn-primary-rv {
     background: var(--secondary);
     color: var(--gray);
     font-weight: 600;
@@ -38,68 +42,72 @@
     padding: 14px 34px;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background: var(--secondary);
 }
 
-.btn-primary:active{
+.btn-primary:active {
     background: var(--secondary) !important;
 }
 
-.btn-primary-rv:hover{
+.btn-primary-rv:hover {
     background: var(--primary);
 }
 
-.btn-primary-rv:active{
+.btn-primary-rv:active {
     background: var(--primary) !important;
 }
 
-section.top-bar{
+section.top-bar {
     background: var(--primary);
     color: var(--gray);
     font-weight: 200;
 }
 
-section.top-bar .container{
+section.top-bar .container {
     height: 45px;
 }
 
 /* Icons */
-i.bi.social{
+i.bi.social {
     font-size: 1.25rem;
 }
 
-i.bi.social:hover{
+i.bi.social:hover {
     color: var(--secondary);
 }
 
 /* Navbar */
-nav.navbar{
+nav.navbar {
     height: 80px;
     background: var(--gray);
 }
 
-nav .navbar-collapse{
+.navbar-brand img {
+    width: 45px;
+}
+
+nav .navbar-collapse {
     background: var(--gray);
     width: 100%;
     left: 0;
     padding: 16px;
 }
 
-nav a.nav-link{
+nav a.nav-link {
     font-weight: 600;
 }
 
-button.navbar-toggler{
+button.navbar-toggler {
     border: none;
     outline: none;
 }
 
-button.navbar-toggler:focus{
+button.navbar-toggler:focus {
     box-shadow: none;
 }
 
-.navbar-brand span{
+.navbar-brand span {
     font-size: 1.5rem;
     margin-left: 10px;
     font-weight: 700;
@@ -112,7 +120,8 @@ button.navbar-toggler:focus{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../img/hero-1.jpg') no-repeat center center/cover; /* Background image */
+    background: url('../img/hero-1.jpg') no-repeat center center/cover;
+    /* Background image */
     overflow: hidden;
 }
 
@@ -124,7 +133,8 @@ button.navbar-toggler:focus{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.692); /* Optional dark overlay */
+    background: rgba(0, 0, 0, 0.692);
+    /* Optional dark overlay */
     z-index: 1;
 }
 
@@ -136,7 +146,7 @@ button.navbar-toggler:focus{
     color: white;
 }
 
-.hero h5{
+.hero h5 {
     color: var(--secondary);
     margin-bottom: 1rem;
 }
@@ -154,43 +164,67 @@ button.navbar-toggler:focus{
 }
 
 /* About GRP */
-.about-grp h2{
+section h2 {
     font-weight: 650;
 }
 
+section h6 {
+    color: var(--secondary);
+}
+
+/* Products GRP */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+.products-grp .card {
+    border: none;
+    border-radius: 0 !important;
+}
 
 /* Responsive */
 
 @media (max-width: 992px) {
     .navbar-collapse {
         position: absolute;
-        top: 100%;    
+        top: 100%;
         z-index: 100000;
     }
 }
 
 @media (max-width: 768px) {
-    .mb-n{
+    .mb-n {
         display: none;
     }
 }
 
 @media (max-width: 576px) {
 
-    nav.navbar{
+    nav.navbar {
         height: 63px;
     }
 
-    .navbar-brand img{
+    .navbar-brand img {
         width: 32px;
     }
 
-    .navbar-brand span{
+    .navbar-brand span {
         font-size: 1.3rem;
         font-weight: 700;
     }
 
-    section.about-grp{
+    section.about-grp {
         margin: 32px auto;
     }
 
@@ -202,7 +236,7 @@ button.navbar-toggler:focus{
         align-items: center;
         justify-content: center;
     }
-    
+
     /* Overlay */
     .hero::before {
         content: "";
@@ -211,24 +245,33 @@ button.navbar-toggler:focus{
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.692); /* Optional dark overlay */
+        background: rgba(0, 0, 0, 0.692);
+        /* Optional dark overlay */
         z-index: 1;
     }
-  
+
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero p {
         font-size: 1rem;
     }
 
-    /* About GRP Section */
-    /* .about-grp .container{
-        padding: 0;
+    /* Products GRP */
+    section.products-grp{
+        background: var(--gray);
+        padding: 32px 0;
     }
 
-    .about-grp div.container-text{
-        padding: 0 32px;
-    } */
+    .products-grp .card{
+        border: none;
+        border-radius: 0;
+    }
+
+    .products-grp .card-body{
+        background: var(--primary);
+        color: var(--gray);
+    }
+
 }
