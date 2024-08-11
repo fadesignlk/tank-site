@@ -300,6 +300,26 @@ section.products{
     transform: scale(1.05);
 }
 
+/* Testimonials */
+section.testimonials {
+    .swiper-slide{
+        text-align: center;
+        padding: 20px;
+        background: var(--gray);
+        border-left: 3px solid var(--secondary);        
+
+        h5{
+            color: var(--secondary);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        h6{
+            color: var(--primary);
+        }
+    }
+}
+
 
 
 /* Footer */
@@ -384,7 +404,7 @@ section.bottom-footer{
         font-weight: 700;
     }
 
-    section.about-grp {
+    section.about-grp, section.about-us, section.testimonials {
         margin: 32px auto;
     }
 
