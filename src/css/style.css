@@ -325,7 +325,7 @@ footer{
     ul{
         li{
             margin-bottom: 16px;
-            opacity: 0.9;
+            opacity: 0.85;
         }
     } 
 
@@ -430,12 +430,15 @@ section.bottom-footer{
         h4{
             font-size: 1.15rem;
             text-transform: uppercase;
+            margin-bottom: 0;
         }
     }
 
     .products-grp .card-body{
         background: var(--secondary);
         color: var(--gray);
+        padding: 9px 0;
+        margin: 0;
     }
 
 
@@ -443,5 +446,6 @@ section.bottom-footer{
     footer img.logo{
         width: 45px;
     }
+
 
 }
