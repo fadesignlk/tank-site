@@ -304,7 +304,7 @@ section.products{
 
 /* Footer */
 footer{
-    background: var(--primary);
+    background: var(--black);
     padding: 32px 0;
     color: var(--gray);
     font-size: 0.9rem;
@@ -312,14 +312,14 @@ footer{
         font-size: 1.6rem;
     }
 
+    h5{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
     .links {
         padding-top: 24px;
-
-        h5{
-            font-size: 1rem;
-            font-weight: 500;
-            margin-bottom: 16px;
-        }
     }
 
     ul{
@@ -328,11 +328,19 @@ footer{
             opacity: 0.9;
         }
     } 
+
+    .support-centre{
+        a{
+            padding: 12px;
+            background: var(--secondary_2);
+            color: var(--black) !important;
+        }
+    }
 }
 
 section.bottom-footer{
-    background: var(--gray);
-    color: var(--primary);
+    background: var(--primary);
+    color: var(--white);
     padding: 7px 0;
     font-size: 0.9rem;
 }
