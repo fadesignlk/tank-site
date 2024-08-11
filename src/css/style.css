@@ -64,13 +64,13 @@ img {
 }
 
 .btn-primary-rv:hover {
-    background: var(--primary);
-    color: var(--gray);
+    background: var(--gray);
+    color: var(--primary);
 }
 
 .btn-primary-rv:active {
-    background: var(--primary) !important;
-    color: var(--gray) !important;
+    background: var(--gray) !important;
+    color: var(--primary) !important;
 
 }
 
@@ -333,7 +333,15 @@ footer{
         a{
             padding: 12px;
             background: var(--secondary_2);
-            color: var(--black) !important;
+            color: var(--primary) !important;
+
+            .bi{
+                font-size: 1.2rem;
+            }
+        }
+
+        a:hover{
+            opacity: 0.8;
         }
     }
 }
@@ -341,7 +349,7 @@ footer{
 section.bottom-footer{
     background: var(--primary);
     color: var(--white);
-    padding: 7px 0;
+    padding: 12px 0;
     font-size: 0.9rem;
 }
 
