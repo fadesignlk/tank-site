@@ -326,7 +326,7 @@ section.testimonials {
 
 /* Footer */
 footer{
-    background: var(--black);
+    background: var(--primary);
     padding: 32px 0;
     color: var(--gray);
     font-size: 0.9rem;
@@ -354,8 +354,9 @@ footer{
     .support-centre{
         a{
             padding: 12px;
-            background: var(--secondary_2);
+            background: var(--gray);
             color: var(--primary) !important;
+            opacity: 0.9;
 
             .bi{
                 font-size: 1.2rem;
@@ -369,7 +370,7 @@ footer{
 }
 
 section.bottom-footer{
-    background: var(--primary);
+    background: var(--secondary_prime);
     color: var(--white);
     padding: 12px 0;
     font-size: 0.9rem;
@@ -388,7 +389,7 @@ section.bottom-footer{
     cursor: pointer; /* Pointer/hand icon */
     padding: 11px 15px; /* Some padding */
     font-size: 18px; /* Increase font size */
-
+    opacity: 0.8;
     i.bi{
         font-size: 20px;
         padding: 0;
