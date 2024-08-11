@@ -48,7 +48,7 @@ img {
 }
 
 .btn-primary-rv {
-    background: var(--secondary);
+    background: linear-gradient(to right, #EE7828, #2C2C2C);
     color: var(--gray);
     font-weight: 600;
     border: none;
@@ -65,7 +65,7 @@ img {
 }
 
 .btn-primary-rv:hover {
-    background: var(--gray);
+    background: var(--secondary);
     color: var(--primary);
 }
 
