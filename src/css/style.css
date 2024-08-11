@@ -3,7 +3,8 @@
 :root {
     --primary: #2C2C2C;
     --secondary: #EE7828;
-    --gray: #f5f6fa;
+    --gray: #F2F2F2;
+    /* --gray: #f5f6fa; */
     --white: white;
     --secondary_prime: #806D61;
     --secondary_2: #C5BAAA;
@@ -165,6 +166,7 @@ button.navbar-toggler:focus {
 .hero h5 {
     color: var(--secondary);
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 
@@ -372,6 +374,32 @@ section.bottom-footer{
     padding: 12px 0;
     font-size: 0.9rem;
 }
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    z-index: 99; /* Ensure it's above other elements */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--secondary); /* Dark grey background */
+    color: var(--black); /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    padding: 11px 15px; /* Some padding */
+    font-size: 18px; /* Increase font size */
+
+    i.bi{
+        font-size: 20px;
+        padding: 0;
+    }
+}
+
+#scrollToTopBtn:hover {
+    background-color: var(--primary); /* Darker background on hover */
+    color: var(--gray);
+}
+
 
 /* Responsive */
 
