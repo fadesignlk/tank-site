@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" / >
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <style>
+      /* Custom styles to handle video background */
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+  
+      .video-container video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        object-fit: cover;
+      }
+  
+      .overlay-content {
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
 
@@ -62,13 +91,28 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="container hero-content">
-        <h5>Welcome to GRP Tank Panel</h5>
-        <h1>We will provide the best GRP Tanks</h1>
-        <p>Your Partner in Excellence for Innovative Solutions and Exceptional Service.</p>
-        <a href="https://wa.me/+94764015125?text=Hello%2C%20I%20Need%20more%20details%20of%20products" class="btn btn-primary-rv" role="button">Connect Us</a>
+      <div class="video-container">
+        <!-- Video Background -->
+        <video autoplay muted loop>
+          <source src="src/video/hero.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    
+        <!-- Overlay Content -->
+        <div class="overlay-content d-flex flex-column justify-content-center align-items-center h-100">
+          <h5>Welcome to GRP Tank Panel</h5>
+          <h1>We will provide the best GRP Tanks</h1>
+          <p>Your Partner in Excellence for Innovative Solutions and Exceptional Service.</p>
+          <a href="https://wa.me/+94764015125?text=Hello%2C%20I%20Need%20more%20details%20of%20products" class="btn btn-primary-rv" role="button">Connect Us</a>
+        </div>
       </div>
+
+      <!-- <div class="container hero-content">
+        
+      </div> -->
     </section>
+
+    
 
     <!-- About GRP -->
     <section class="about-grp">
